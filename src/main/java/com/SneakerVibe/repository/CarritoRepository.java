@@ -1,5 +1,8 @@
 package com.SneakerVibe.repository;
 
-public interface CarritoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.SneakerVibe.model.Carrito;
+
+public interface CarritoRepository extends JpaRepository<Carrito, Long>{
     
 }
