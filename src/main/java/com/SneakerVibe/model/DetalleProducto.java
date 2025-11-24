@@ -29,6 +29,9 @@ public class DetalleProducto {
     private String href;
     private String altText;
 
+    @Column(name = "precio_oferta")
+    private BigDecimal precioOferta;
+
     @ManyToOne
     @JoinColumn(name = "producto_id", nullable = false)
     private Producto producto;
